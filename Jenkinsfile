@@ -7,6 +7,8 @@ pipeline {
                 ls
                 echo "hola"
                 pwd
+                uname
+                docker ps
                 hostname
                 '''
             }
