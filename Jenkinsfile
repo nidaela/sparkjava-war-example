@@ -10,6 +10,7 @@ pipeline {
                 uname
                 docker ps
                 hostname
+                touch 1
                 '''
             }
         }
