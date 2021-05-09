@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'nodo' }
     stages {
-        stage('download') {
+        stage('descargar') {
             steps {
                 sh '''
                 ls
