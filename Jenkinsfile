@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
                 cd /home/prueba/workspace/prueba2
-                docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
+                docker run -t --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
                 '''
             }
         }
