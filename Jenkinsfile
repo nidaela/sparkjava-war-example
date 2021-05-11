@@ -26,7 +26,7 @@ pipeline {
             steps {
                 sh '''
                 cd /home/prueba/workspace/prueba2
-                docker cp /home/prueba/workspace/prueba2/target/sparkjava-hello-world-1.0.war prueba12://usr/local/tomcat/webapps
+                docker cp /home/prueba/workspace/prueba2/target/sparkjava-hello-world-1.0.war prueba://usr/local/tomcat/webapps
                 '''
             }
         }
