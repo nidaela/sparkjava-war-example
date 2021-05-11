@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                 ls
-                echo "hola2"
+                echo "hola"
                 pwd
                 uname
                 docker ps
