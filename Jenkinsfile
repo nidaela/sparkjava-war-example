@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'nodo2' }
+    agent { label 'linux' }
     stages {
         stage('download') {
             steps {
