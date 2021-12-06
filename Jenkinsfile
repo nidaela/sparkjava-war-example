@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'local' }
+    agent { label 'linux1' }
     stages {
         stage('download') {
             steps {
