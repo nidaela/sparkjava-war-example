@@ -1,11 +1,12 @@
 pipeline {
-    agent { label 'linux1' }
+    agent any
     stages {
         stage('download') {
             steps {
                 sh '''
                 ls
                 echo "hola"
+                echo $prueba
                 pwd
                 uname
                 docker ps
