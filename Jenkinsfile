@@ -7,6 +7,7 @@ pipeline {
                 ls
                 echo "hola"
                 echo $prueba
+                echo $password
                 pwd
                 uname
                 docker ps
