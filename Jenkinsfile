@@ -7,6 +7,8 @@ pipeline {
                 ls
                 echo "hola"
                 echo $prueba
+                cd /home/devops/workspace/$prueba/target
+                pwd
                 echo $password
                 pwd
                 uname
