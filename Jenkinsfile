@@ -21,7 +21,7 @@ pipeline {
         stage('compilar') {
             steps {
                 sh '''
-                docker run -t --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean deploy
+                mvn clean install
                 '''
             }
         }
