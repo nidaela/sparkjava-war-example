@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh '''
                 cd /home/devops/workspace/academia
-                docker cp /home/devops/workspace/academia/sparkjava-war-example/target/sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
+                docker cp /home/devops/workspace/academia/target/sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
                 
                 '''
             }
