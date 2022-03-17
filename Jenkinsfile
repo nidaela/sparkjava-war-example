@@ -4,8 +4,8 @@ pipeline {
         stage('download') {
             steps {
                 sh '''
-                ls
-                echo "hola"
+                l
+                eho "hola"
                 echo $prueba
                 pwd
                 ls -lrt
