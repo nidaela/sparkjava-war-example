@@ -32,7 +32,6 @@ pipeline {
                 sh '''
                 cd /home/devops/workspace/academia
                 docker cp /home/devops/workspace/academia/target/sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
-                
                 '''
             }
         }
