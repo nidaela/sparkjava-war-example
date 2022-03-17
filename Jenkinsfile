@@ -4,8 +4,8 @@ pipeline {
         stage('download') {
             steps {
                 sh '''
-                l
-                eho "hola"
+                ls
+                echo "hola"
                 echo $prueba
                 pwd
                 ls -lrt
@@ -21,7 +21,7 @@ pipeline {
         stage('compilar') {
             steps {
                 sh '''
-                cd /home/devops/workspace/academia
+                cd /ome/devops/workspace/academia
                 pwd
                 docker run --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
                 '''
